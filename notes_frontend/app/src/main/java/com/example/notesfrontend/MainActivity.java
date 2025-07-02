@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;
 
@@ -55,6 +56,34 @@ public class MainActivity extends AppCompatActivity implements NotesAdapter.OnNo
         fab.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, EditNoteActivity.class);
             startActivityForResult(intent, REQ_CODE_NEW_NOTE);
+        });
+
+        // Bottom navigation logic
+        BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
+        navigation.setSelectedItemId(R.id.menu_notes);
+        navigation.setOnNavigationItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.menu_home) {
+                startActivity(new Intent(this, HomeActivity.class));
+                finish();
+                return true;
+            } else if (itemId == R.id.menu_notes) {
+                // already here
+                return true;
+            } else if (itemId == R.id.menu_search) {
+                startActivity(new Intent(this, SearchActivity.class));
+                finish();
+                return true;
+            } else if (itemId == R.id.menu_profile) {
+                startActivity(new Intent(this, ProfileActivity.class));
+                finish();
+                return true;
+            } else if (itemId == R.id.menu_settings) {
+                startActivity(new Intent(this, SettingsActivity.class));
+                finish();
+                return true;
+            }
+            return false;
         });
     }
 

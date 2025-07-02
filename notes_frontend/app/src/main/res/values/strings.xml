@@ -12,4 +12,18 @@
     <string name="note_saved">Note saved</string>
     <string name="note_deleted">Note deleted</string>
     <string name="new_note">New Note</string>
+
+    <!-- Navigation and new screens -->
+    <string name="nav_home">Home</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+    <string name="home_welcome">Welcome to NotesMaster!</string>
+    <string name="profile_title">Profile</string>
+    <string name="profile_avatar">Profile Avatar</string>
+    <string name="profile_name_demo">Demo User</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_coming_soon">Settings coming soon...</string>
+    <string name="search_title">Search Notes</string>
 </resources>
