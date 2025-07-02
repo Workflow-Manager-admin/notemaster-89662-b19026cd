@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NotesMaster</string>
+    <string name="hint_search">Search notes...</string>
+    <string name="action_add_note">Add Note</string>
+    <string name="action_delete_note">Delete</string>
+    <string name="action_edit_note">Edit</string>
+    <string name="details_title">Note Details</string>
+    <string name="edit_note_title">Edit Note</string>
+    <string name="save">Save</string>
+    <string name="label_title">Title</string>
+    <string name="label_content">Content</string>
+    <string name="note_saved">Note saved</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="new_note">New Note</string>
+</resources>
