@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity implements NotesAdapter.OnNo
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SettingsActivity.applyUserTheme(this);
         super.onCreate(savedInstanceState);
-        setTheme(R.style.Theme_NotesMaster_Light); // Set custom theme
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.mainToolbar);

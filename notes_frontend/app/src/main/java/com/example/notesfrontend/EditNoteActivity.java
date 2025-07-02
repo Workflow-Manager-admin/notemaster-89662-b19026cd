@@ -21,6 +21,7 @@ public class EditNoteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SettingsActivity.applyUserTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_note);
 

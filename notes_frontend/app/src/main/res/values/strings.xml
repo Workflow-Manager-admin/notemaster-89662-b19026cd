@@ -26,4 +26,10 @@
     <string name="settings_title">Settings</string>
     <string name="settings_coming_soon">Settings coming soon...</string>
     <string name="search_title">Search Notes</string>
+
+    <!-- Theme switching -->
+    <string name="theme">Theme</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
 </resources>

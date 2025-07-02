@@ -121,7 +121,18 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
                 .format(note.getCreatedAt()));
 
             cardView.setOnClickListener(v -> listener.onNoteClicked(note));
-            cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
+            // Use Material surface color for background (supports dark mode)
+            int bgColor;
+            try {
+                bgColor = context.getResources().getColor(
+                    context.getResources().getIdentifier(
+                        "material_card", "color", context.getPackageName()),
+                    context.getTheme()
+                );
+            } catch (Exception e) {
+                bgColor = context.getResources().getColor(android.R.color.background_light);
+            }
+            cardView.setCardBackgroundColor(bgColor);
 
             cardView.setOnLongClickListener(v -> {
                 PopupMenu popup = new PopupMenu(context, cardView);

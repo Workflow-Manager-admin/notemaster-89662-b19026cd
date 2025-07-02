@@ -17,8 +17,8 @@ import android.view.MenuItem;
 public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SettingsActivity.applyUserTheme(this);
         super.onCreate(savedInstanceState);
-        setTheme(R.style.Theme_NotesMaster_Light);
         setContentView(R.layout.activity_profile);
 
         Toolbar toolbar = findViewById(R.id.profileToolbar);
